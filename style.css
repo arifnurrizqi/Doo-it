@@ -176,30 +176,36 @@ main {
   flex-direction : column;
 }
 
-h3, h2 {
+h3, h2, h4 {
   margin: 0;
   padding : 0;
   color : #fff;
   justify-content: flex-start !important;
 }
 
-.chart-container .chart, .table, .add-items {
+.mt-20 {
+  margin-top: 20px;
+}
+
+.chart-container .chart, .table, .add-items, .container-card {
   align-items: center;
   background : #14112B;
-  padding : 15px 30px;
+  padding : 25px;
   border-radius: 25px;
   margin-top : 30px; 
 }
 
-.table div, .expenses header, #pemasukan header {
+.table div, .expenses header, #pemasukan header, .edit-profile {
   display: flex;
   justify-content: space-between;
 }
 
-.table div a:hover {background-color: #1d173b;}
+.table div a:hover, .edit-profile a:hover {
+  background-color: #1d173b;
+}
 
-.table div a, .btn-add {
-  padding: 5px 0 0 10px;
+.table div a, .btn-add, .edit-profile a {
+  padding: 10px;
   border-radius: 5px;
   display: flex;
   color : green;
@@ -210,9 +216,8 @@ h3, h2 {
   align-items: center;
 }
 
-.table div a svg {
+.table div a svg, .edit-profile a svg {
   fill: green;
-  margin-left: 10px;
 }
 
 #busines { 
@@ -251,7 +256,7 @@ h3, h2 {
   color: #474661;
 }
 
-.expenses, #pemasukan {
+.expenses, #pemasukan, #setting {
   display : flex;
   height: 100vh;
   flex-direction : column;
@@ -345,7 +350,7 @@ h3, h2 {
   background: rgba(70, 70, 75, 0.49);
 }
 
-#item-input input {
+#item-input input, .profile-container input {
   border: none;
   color : #fff;
   background-color: transparent;
@@ -369,6 +374,16 @@ h3, h2 {
 .table-value .btn-add {
   justify-content: flex-end;
 }
+
+.name-container {
+  display: flex;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
 
 @media (max-width: 768px) {
   
