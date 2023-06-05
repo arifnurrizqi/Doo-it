@@ -67,7 +67,7 @@
           <div class="table">
             <div>
               <h3>Recent Transaction</h3>
-              <a href="#pengeluaran">View All 
+              <a class="center" href="#pengeluaran">View All 
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
               </a>
             </div>          
@@ -310,7 +310,7 @@
                   <input type="text" placeholder="Nama item" name="input">
                 </div>
               </td>
-              <td class="flex">
+              <td>
                 <div class="input-container">
                   <input type="text" placeholder="Type" name="input">
                 </div>
@@ -326,8 +326,51 @@
                 </div>
               </td>              
             </tr>
-            
+            <tr>
+              <td>
+                <div id="item-input">
+                  <input type="text" placeholder="Nama item" name="input">
+                </div>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input type="text" placeholder="Type" name="input">
+                </div>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input type="text" placeholder="Rate" name="input">
+                </div>
+              </td>              
+              <td>
+                <div class="input-container">
+                  <input type="text" placeholder="Amount" name="input">
+                </div>
+              </td>              
+            </tr>            
           </table>
+          <div class="items-value">
+            <a href="#" class="btn-add"><strong>add items</strong></a>
+            <table class="table-value">
+              <tr>
+                <td>Subtotal</td>
+                <td id="total">-</td>
+              </tr>
+              <tr>
+                <td>Discount</td>
+                <td id="total"><a href="#" class="btn-add"><strong>add</strong></a></td>
+              </tr>
+              <tr>
+                <td>Tax</td>
+                <td id="total"><a href="#" class="btn-add"><strong>add</strong></a></td>
+              </tr>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td id="total"><strong>-</strong></td>
+              </tr>
+            </table>
+          </div>
+          
         </div>
       </section>
     </main>
