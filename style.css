@@ -32,6 +32,11 @@ a {text-decoration: none;}
   font-size: 18px;
 }
 
+.brand-big {
+  margin-left: 10%;
+  font-size: 32px;
+}
+
 .profile {
   display : flex;
   align-items : center;
