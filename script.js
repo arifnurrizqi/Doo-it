@@ -66,5 +66,16 @@ navItems.forEach((item, index) => {
   });
 });
 
+//visible unvisible passw
+function toggleVisibility() {
+  var newPassword = document.getElementById("new-password");
+  var confirmPassword = document.getElementById("confirm-password");
+  if (newPassword.type === "password") {
+    newPassword.type = "text";
+  } else {
+    newPassword.type = "password";
+  }
+}
+
 
 
