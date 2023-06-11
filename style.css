@@ -6,7 +6,6 @@ body, p {
 
 body {
   background-color: rgba(19, 15, 38);
-  overflow: hidden;
 }
 
 a {text-decoration: none;}
@@ -25,6 +24,10 @@ a {text-decoration: none;}
   background-color: #121639;
   color: #fff;
   padding: 10px;
+}
+
+.nav-mobile {
+  display: none;
 }
 
 .brand {
@@ -113,8 +116,8 @@ main {
   display : flex;
   height: 100vh;
   align-items: center;
-  justify-content: center;
   flex-direction : column;
+  padding: 30px;
 }
 
 .dashboard header {
@@ -174,6 +177,11 @@ main {
 .chart-container {
   display : flex;
   flex-direction : column;
+}
+
+canvas {
+  width: 900px;
+  height: 160px;
 }
 
 h3, h2, h4 {
@@ -261,7 +269,7 @@ h3, h2, h4 {
   height: 100vh;
   flex-direction : column;
   margin: 0 65px 0 65px;
-  justify-content: center;
+  padding: 50px 30px;
 }
 
 .search-container {
@@ -445,5 +453,27 @@ h3, h2, h4 {
 }
 
 @media (max-width: 768px) {
-  
+
+  .container {
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    padding: 10px;
+    background-color: rgba(70, 70, 75, 0.30);
+  }
+
+  canvas {
+    width: auto;
+    height: auto;
+  }
+
+  main {
+    margin:auto;
+  }
 }
